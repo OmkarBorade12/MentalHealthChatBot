@@ -1,0 +1,1590 @@
+{
+    "intents": [
+        {
+            "tag": "greeting",
+            "patterns": [
+                "Hi",
+                "Hello",
+                "Hey",
+                "Is anyone there?",
+                "Hola",
+                "Greetings"
+            ],
+            "responses": [
+                "Hello! I'm here to listen.",
+                "Hi there. How are you feeling today?",
+                "Greetings. I'm your safe space.",
+                "Hi, I am your mental health companion."
+            ]
+        },
+        {
+            "tag": "goodbye",
+            "patterns": [
+                "Bye",
+                "See you later",
+                "Goodbye",
+                "I'm leaving",
+                "End chat",
+                "Quit"
+            ],
+            "responses": [
+                "Take care of yourself.",
+                "Goodbye! I'm here if you need me.",
+                "Stay safe.",
+                "Remember, you are important."
+            ]
+        },
+        {
+            "tag": "thanks",
+            "patterns": [
+                "Thanks",
+                "Thank you",
+                "That's helpful",
+                "Thanks a lot",
+                "I appreciate it"
+            ],
+            "responses": [
+                "You're welcome.",
+                "Glad I could help.",
+                "Anytime.",
+                "I am happy to support you."
+            ]
+        },
+        {
+            "tag": "sad",
+            "patterns": [
+                "I feel sad",
+                "I am depressed",
+                "I feel lonely",
+                "Everything is hopeless",
+                "I want to cry",
+                "I'm down",
+                "I feel empty",
+                "Nothing matters",
+                "Low",
+                "Feeling low",
+                "Bad",
+                "Terrible",
+                "Not good",
+                "I feel blue",
+                "My heart is heavy",
+                "I just want to stay in bed",
+                "I don't find joy in anything anymore"
+            ],
+            "responses": [
+                "I'm sorry you're feeling this way. It's okay to not be okay.",
+                "I hear you. You are not alone.",
+                "Would you like to try a relaxation exercise?",
+                "Depression can feel isolating, but I am here for you."
+            ]
+        },
+        {
+            "tag": "anxious",
+            "patterns": [
+                "I am anxious",
+                "I feel panecked",
+                "I can't breathe",
+                "I am stressed",
+                "I am worried",
+                "My heart is racing",
+                "I have anxiety",
+                "I am nervous",
+                "I feel like something bad is going to happen",
+                "My stomach is in knots",
+                "I can't sit still",
+                "I feel on edge"
+            ],
+            "responses": [
+                "Take a deep breath. Focus on your breathing.",
+                "Anxiety is tough, but it passes. I'm here with you.",
+                "Let's try to ground ourselves. Name 5 things you see.",
+                "Try the 4-7-8 breathing technique: Inhale for 4, hold for 7, exhale for 8."
+            ]
+        },
+        {
+            "tag": "neutral",
+            "patterns": [
+                "I am okay",
+                "Nothing much",
+                "Just chillin",
+                "Fine",
+                "Normal",
+                "I'm good"
+            ],
+            "responses": [
+                "Good to hear.",
+                "Okay.",
+                "How can I support you today?",
+                "That is good. Do you want to talk about anything specific?"
+            ]
+        },
+        {
+            "tag": "help",
+            "patterns": [
+                "I need help",
+                "Can you help me?",
+                "What can you do?",
+                "I need support"
+            ],
+            "responses": [
+                "I can listen, offer coping strategies, and recommend resources.",
+                "I'm a chatbot designed to support your mental well-being.",
+                "I can help you navigate your emotions and find resources."
+            ]
+        },
+        {
+            "tag": "suicide",
+            "patterns": [
+                "I want to kill myself",
+                "I want to die",
+                "I am suicidal",
+                "I can't go on",
+                "I want to end it all"
+            ],
+            "responses": [
+                "Please stop. You are not alone. Please call a suicide hotline immediately.",
+                "Your life matters. Please contact a professional or call 911/988.",
+                "I cannot provide crisis support, but there are people who can help properly. Please reach out to emergency services."
+            ]
+        },
+        {
+            "tag": "insomnia",
+            "patterns": [
+                "I can't sleep",
+                "I have insomnia",
+                "I am awake all night",
+                "I can't rest"
+            ],
+            "responses": [
+                "Sleep is important. Have you tried avoiding screens before bed?",
+                "Try reading a book or listening to calming music.",
+                "Progressive muscle relaxation can help you fall asleep."
+            ]
+        },
+        {
+            "tag": "depression_info",
+            "patterns": [
+                "What is depression?",
+                "Do I have depression?",
+                "Signs of depression"
+            ],
+            "responses": [
+                "Depression is a mood disorder that causes a persistent feeling of sadness and loss of interest.",
+                "Common signs include persistent sadness, fatigue, and loss of interest in activities.",
+                "If you think you have depression, consulting a professional is the best step."
+            ]
+        },
+        {
+            "tag": "anxiety_info",
+            "patterns": [
+                "What is anxiety?",
+                "Do I have anxiety?",
+                "Signs of anxiety"
+            ],
+            "responses": [
+                "Anxiety is your body's natural response to stress. It's a feeling of fear or apprehension.",
+                "Symptoms can include rapid breathing, sweating, and feeling tired.",
+                "Chronic anxiety can be treated with therapy and mindfulness."
+            ]
+        },
+        {
+            "tag": "panic_attack",
+            "patterns": [
+                "I am having a panic attack",
+                "Help I am panicking",
+                "Panic attack help"
+            ],
+            "responses": [
+                "You are safe. This will pass. Focus on your feet on the ground.",
+                "Breathe in slowly through your nose, and out through your mouth.",
+                "Try to find 5 things you can see, 4 things you can feel, 3 you can hear, 2 you can smell, and 1 you can taste."
+            ]
+        },
+        {
+            "tag": "self_esteem",
+            "patterns": [
+                "I hate myself",
+                "I am worthless",
+                "I am ugly",
+                "No one likes me"
+            ],
+            "responses": [
+                "You are valuable and worthy of love.",
+                "Be kind to yourself. You are doing your best.",
+                "Try to talk to yourself like you would talk to a friend."
+            ]
+        },
+        {
+            "tag": "relationships",
+            "patterns": [
+                "I broke up",
+                "My partner hates me",
+                "I am lonely in my relationship",
+                "Relationship advice"
+            ],
+            "responses": [
+                "Relationships can be hard. Configuring boundaries is important.",
+                "Communication is key in any relationship.",
+                "It is okay to prioritize your own well-being in a relationship."
+            ]
+        },
+        {
+            "tag": "what_are_you",
+            "patterns": [
+                "Who are you?",
+                "Are you human?",
+                "What is your name?"
+            ],
+            "responses": [
+                "I am a Mental Health Chatbot designed to support you.",
+                "I am an AI companion here to help you navigate your emotions.",
+                "I am a virtual assistant for mental well-being."
+            ]
+        },
+        {
+            "tag": "stress_management",
+            "patterns": [
+                "I am stressed",
+                "How to manage stress",
+                "Stress relief tips",
+                "I am overwhelmed"
+            ],
+            "responses": [
+                "Stress is a normal reaction, but too much is hard. Try the 4-7-8 breathing method.",
+                "Physical activity can help release built-up stress hormones. Even a walk helps.",
+                "Prioritize your tasks. It is okay to say no to things that overwhelm you.",
+                "Focus on what you can control. Let go of what you cannot."
+            ]
+        },
+        {
+            "tag": "loneliness",
+            "patterns": [
+                "I feel lonely",
+                "I have no friends",
+                "I am all alone",
+                "No one cares about me"
+            ],
+            "responses": [
+                "Loneliness is a universal human experience, but it hurts. I am here with you.",
+                "Connecting with others takes small steps. Maybe join a club or online group about a hobby?",
+                "You are not alone in feeling alone. Many people feel this way.",
+                "Focus on the quality of connections, not the quantity."
+            ]
+        },
+        {
+            "tag": "grief",
+            "patterns": [
+                "I lost someone",
+                "I am grieving",
+                "My friend died",
+                "My pet died",
+                "I miss them"
+            ],
+            "responses": [
+                "I am so sorry for your loss. Grief is a process without a timeline.",
+                "Allow yourself to feel the pain. It is a sign of how much you loved.",
+                "Be gentle with yourself. Healing comes in waves.",
+                "Remember the good memories. They stay with you forever."
+            ]
+        },
+        {
+            "tag": "anger",
+            "patterns": [
+                "I am angry",
+                "I hate everything",
+                "I want to break something",
+                "I am furious"
+            ],
+            "responses": [
+                "Anger is a valid emotion. It often tells us something is wrong.",
+                "Take a step back. Count to 10 before reacting.",
+                "Channel that energy into something physical like exercise or writing.",
+                "Deep breathing can help cool down the physiological heat of anger."
+            ]
+        },
+        {
+            "tag": "eating_disorder_info",
+            "patterns": [
+                "I think I have an eating disorder",
+                "I hate my body",
+                "I starve myself",
+                "I binge eat"
+            ],
+            "responses": [
+                "Your relationship with food and your body is complex. Help is available.",
+                "Eating disorders are serious conditions. Please consult a doctor or nutritionist.",
+                "You deserve to nourish your body. You are more than your appearance.",
+                "Please consider reaching out to the NEDA helpline or a local specialist."
+            ]
+        },
+        {
+            "tag": "ptsd_info",
+            "patterns": [
+                "I have flashbacks",
+                "I have PTSD",
+                "Trauma memories",
+                "I can't forget what happened"
+            ],
+            "responses": [
+                "Trauma leaves a deep imprint, but healing is possible.",
+                "Grounding techniques (like holding ice or naming colors) can help during flashbacks.",
+                "Therapies like EMDR and CBT are very effective for trauma.",
+                "You are a survivor. You are safe now."
+            ]
+        },
+        {
+            "tag": "ocd_info",
+            "patterns": [
+                "I have intrusive thoughts",
+                "I have OCD",
+                "I have to check things constantly",
+                "Obsessive thoughts"
+            ],
+            "responses": [
+                "OCD involves intrusive thoughts and compulsions to relieve anxiety.",
+                "You are not your thoughts. Thoughts are just mental events.",
+                "Exposure and Response Prevention (ERP) is the gold standard therapy for OCD.",
+                "Please speak to a specialist who understands OCD."
+            ]
+        },
+        {
+            "tag": "bipolar_info",
+            "patterns": [
+                "I have mood swings",
+                "One day I'm happy next sad",
+                "Do I have bipolar?",
+                "Manic episodes"
+            ],
+            "responses": [
+                "Bipolar disorder involves extreme mood shifts between mania (highs) and depression (lows).",
+                "It is a manageable condition with the right medication and therapy.",
+                "Tracking your mood daily can help you identify patterns.",
+                "Consult a psychiatrist for a proper diagnosis."
+            ]
+        },
+        {
+            "tag": "adhd_info",
+            "patterns": [
+                "I can't focus",
+                "I have ADHD",
+                "My mind works too fast",
+                "I am easily distracted"
+            ],
+            "responses": [
+                "ADHD is a neurodevelopmental condition affecting focus and impulse control.",
+                "Breaking tasks into tiny steps (micro-tasks) can help.",
+                "Use external tools like timers and planners. Your brain works differently, not badly.",
+                "Many successful people have ADHD. It comes with creativity and energy."
+            ]
+        },
+        {
+            "tag": "mindfulness_techniques",
+            "patterns": [
+                "How to meditate",
+                "Mindfulness tips",
+                "I need to clear my mind",
+                "Teach me mindfulness"
+            ],
+            "responses": [
+                "Try the 'Body Scan': Close your eyes and focus on each part of your body from toe to head.",
+                "Focus on your breath. When your mind wanders, gently bring it back.",
+                "Mindfulness is just paying attention to the present moment without judgment.",
+                "Try '5 Senses Grounding': Notice 5 things you see, 4 feel, 3 hear, 2 smell, 1 taste."
+            ]
+        },
+        {
+            "tag": "cbt_concepts",
+            "patterns": [
+                "How to change my thoughts",
+                "CBT tips",
+                "My thoughts are negative",
+                "Cognitive distortions"
+            ],
+            "responses": [
+                "CBT helps you catch specific negative thoughts and challenge them.",
+                "Ask yourself: 'Is this thought 100% true?' and 'Is it helpful?'",
+                "Replace 'I must' with 'I would prefer'. Be flexible with yourself.",
+                "Identify triggers that start the negative thought loop."
+            ]
+        },
+        {
+            "tag": "motivation",
+            "patterns": [
+                "I have zero motivation",
+                "I can't get out of bed",
+                "Inspire me",
+                "Why try?"
+            ],
+            "responses": [
+                "Action often comes before motivation. Do one tiny thing, and motivation may follow.",
+                "Be gentle with yourself. Rest is productive too.",
+                "Focus on your 'Why'. What is one small reason to keep going?",
+                "Every step forward is a victory, no matter how small."
+            ]
+        },
+        {
+            "tag": "medication_info",
+            "patterns": [
+                "Should I take medication?",
+                "What are antidepressants?",
+                "Do I need pills?",
+                "Side effects of mental health meds"
+            ],
+            "responses": [
+                "Medication can be an effective part of treatment for many people. It is best discussed with a psychiatrist.",
+                "There are many types of medications (SSRI, SNRI, etc.). A doctor can help you find what works for you.",
+                "Medication is a tool, not a failure. Whatever helps you heal is valid."
+            ]
+        },
+        {
+            "tag": "therapy_types",
+            "patterns": [
+                "What is CBT?",
+                "What is DBT?",
+                "Types of therapy",
+                "How does therapy work?"
+            ],
+            "responses": [
+                "CBT (Cognitive Behavioral Therapy) focuses on changing negative thought patterns.",
+                "DBT (Dialectical Behavior Therapy) is great for emotional regulation and interpersonal effectiveness.",
+                "There are many types: Talk therapy, EMDR for trauma, Somatic therapy for body-based healing.",
+                "Therapy provides a safe, confidential space to explore your feelings with a professional."
+            ]
+        },
+        {
+            "tag": "privacy_policy",
+            "patterns": [
+                "Is this chat private?",
+                "Do you save my data?",
+                "Privacy policy",
+                "Who sees this?"
+            ],
+            "responses": [
+                "Your privacy is important. This chat is stored locally for your history, but we do not sell your data.",
+                "We are committed to confidentiality. However, if you indicate harm to yourself or others, safety protocols apply.",
+                "Please review our detailed privacy policy in the app settings for more information."
+            ]
+        },
+        {
+            "tag": "crisis_resources",
+            "patterns": [
+                "I need immediate help",
+                "Crisis hotline",
+                "Who do I call for help?",
+                "Emergency numbers"
+            ],
+            "responses": [
+                "If you are in danger, please call 911 immediately.",
+                "You can reach the Suicide & Crisis Lifeline by calling or texting 988 (USA).",
+                "Text HOME to 741741 to connect with a Crisis Text Line counselor."
+            ]
+        },
+        {
+            "tag": "self_harm_safe",
+            "patterns": [
+                "I want to hurt myself",
+                "Alternatives to self harm",
+                "I urge to cut",
+                "Distraction from self harm"
+            ],
+            "responses": [
+                "It sounds like you are in a lot of pain. Try holding an ice cube instead.",
+                "Draw on your arm with a red marker or snap a rubber band against your wrist gently.",
+                "Tear up paper or scream into a pillow to release the tension safely.",
+                "Please text HOME to 741741. You deserve to be safe."
+            ]
+        },
+        {
+            "tag": "bpd_info",
+            "patterns": [
+                "What is BPD?",
+                "Borderline Personality Disorder",
+                "I feel abandoned",
+                "My emotions are extreme"
+            ],
+            "responses": [
+                "BPD involves intense emotional instability, fear of abandonment, and impulsive behaviors.",
+                "Dialectical Behavior Therapy (DBT) is highly effective for managing BPD.",
+                "Your intense feelings are valid, but they don't define your reality.",
+                "Relationships can be stable with communication and boundaries."
+            ]
+        },
+        {
+            "tag": "addiction_support",
+            "patterns": [
+                "I can't stop drinking",
+                "Drug addiction help",
+                "I relapsed",
+                "Substance abuse"
+            ],
+            "responses": [
+                "Recovery is a journey. Relapse is often part of the process, not the end.",
+                "Consider reaching out to AA, NA, or a local support group.",
+                "You are worthy of recovery. One day at a time.",
+                "Substance abuse often masks underlying pain. Healing the pain helps heal the addiction."
+            ]
+        },
+        {
+            "tag": "schizophrenia_info",
+            "patterns": [
+                "Hearing voices",
+                "Schizophrenia symptoms",
+                "Delusions",
+                "Paranoid thoughts"
+            ],
+            "responses": [
+                "Schizophrenia is a complex condition affecting how a person interprets reality.",
+                "Early treatment with antipsychotic medication and therapy can significantly improve quality of life.",
+                "If you are hearing voices that tell you to hurt yourself, please go to the ER immediately.",
+                "You are not your illness. Many people manage periods of psychosis and live full lives."
+            ]
+        },
+        {
+            "tag": "autism_neurodivergence",
+            "patterns": [
+                "I feel different",
+                "Adult autism",
+                "Neurodivergent burnout",
+                "Sensory overload"
+            ],
+            "responses": [
+                "Neurodivergence means your brain processes the world differently. That's not a defect.",
+                "If you are overwhelmed, find a quiet, dark space to decompress (sensory break).",
+                "Stimming (repetitive movement) is a natural way to regulate your nervous system.",
+                "Unmasking (being your authentic self) takes courage and time."
+            ]
+        },
+        {
+            "tag": "dissociation_grounding",
+            "patterns": [
+                "I feel unreal",
+                "I am floating",
+                "Dissociation",
+                "Nothing feels real",
+                "Derealization"
+            ],
+            "responses": [
+                "You might be dissociating. Try to feel your feet on the floor.",
+                "Rub your hands together quickly to create heat. Focus on that sensation.",
+                "Name 3 objects you can see and describe their color out loud.",
+                "Hold something cold like an ice cube or a frozen orange."
+            ]
+        },
+        {
+            "tag": "sleep_hygiene",
+            "patterns": [
+                "Tips for better sleep",
+                "Sleep hygiene",
+                "How to fall asleep faster",
+                "Bedtime routine"
+            ],
+            "responses": [
+                "Keep your room cool and dark. Avoid screens 1 hour before bed.",
+                "Try a consistent wake-up time, even on weekends, to regulate your clock.",
+                "Avoid caffeine after 2 PM. It stays in your system longer than you think.",
+                "If you can't sleep after 20 minutes, get up and do something boring until tired."
+            ]
+        },
+        {
+            "tag": "work_stress_burnout",
+            "patterns": [
+                "I hate my job",
+                "Burnout symptoms",
+                "Too much work",
+                "Toxic workplace"
+            ],
+            "responses": [
+                "Burnout is emotional, physical, and mental exhaustion caused by excessive stress.",
+                "Set boundaries: Don't check emails after hours if possible.",
+                "Take micro-breaks. Step away from the screen for 5 minutes every hour.",
+                "Your worth is not defined by your productivity."
+            ]
+        },
+        {
+            "tag": "gratitude_practice",
+            "patterns": [
+                "How to be positive",
+                "Gratitude journaling",
+                "I complain too much",
+                "Shift mindset"
+            ],
+            "responses": [
+                "Try listing 3 things you are grateful for right now. They can be tiny.",
+                "Gratitude rewires the brain to scan for the good, not just the bad.",
+                "Focus on 'glimmers'\u00e2\u20ac\u201dsmall moments of safety or joy in your day.",
+                "Write down one thing that went well today and why."
+            ]
+        },
+        {
+            "tag": "jokes",
+            "patterns": [
+                "Tell me a joke",
+                "Make me laugh",
+                "Say something funny",
+                "I need a laugh"
+            ],
+            "responses": [
+                "Why did the scarecrow win an award? Because he was outstanding in his field!",
+                "What do you call a fake noodle? An impasta!",
+                "Why don't skeletons fight each other? They don't have the guts.",
+                "Parallel lines have so much in common. It\u00e2\u20ac\u2122s a shame they\u00e2\u20ac\u2122ll never meet."
+            ]
+        },
+        {
+            "tag": "weather_smalltalk",
+            "patterns": [
+                "How is the weather?",
+                "Is it raining?",
+                "What is the weather like?"
+            ],
+            "responses": [
+                "I'm just a chatbot, so I don't can't look out the window. But I hope it's sunny where you are!",
+                "I live in the cloud, so it's always cloudy here! How is it for you?",
+                "I can't check the forecast, but a walk outside (if it's nice) is great for mental health."
+            ]
+        },
+        {
+            "tag": "bot_identity_fun",
+            "patterns": [
+                "Do you have a family?",
+                "Are you married?",
+                "Do you sleep?",
+                "What do you eat?"
+            ],
+            "responses": [
+                "I have a lot of parent code, does that count?",
+                "I run on electricity and logic, no snacks for me!",
+                "I never sleep, I'm always here to listen.",
+                "My favorite food is data."
+            ]
+        },
+        {
+            "tag": "therapy_finder",
+            "patterns": [
+                "How do I find a therapist?",
+                "I need a doctor",
+                "Find a psychologist",
+                "Where to get help"
+            ],
+            "responses": [
+                "Finding a therapist is a brave step. You can check directories like Psychology Today or GoodTherapy.",
+                "If you have insurance, their website is a great place to start looking for in-network providers.",
+                "You can ask your primary care doctor for a referral.",
+                "Apps like BetterHelp or Talkspace also offer online therapy options."
+            ]
+        },
+        {
+            "tag": "cost_of_therapy",
+            "patterns": [
+                "Is therapy expensive?",
+                "How much does therapy cost?",
+                "I can't afford therapy"
+            ],
+            "responses": [
+                "Therapy costs vary. Some therapists offer a 'sliding scale' fee based on income.",
+                "Community mental health centers often provide low-cost or free services.",
+                "Check with your insurance provider, as many plans cover mental health.",
+                "Group therapy can be a more affordable alternative to individual sessions."
+            ]
+        },
+        {
+            "tag": "guilt",
+            "patterns": [
+                "I feel guilty",
+                "It's all my fault",
+                "I made a mistake",
+                "I regret everything"
+            ],
+            "responses": [
+                "Guilt shows you care, but don't let it consume you. We all make mistakes.",
+                "Be gentle with yourself. You did the best you could with what you knew then.",
+                "Making amends can help, but forgiveness starts with forgiving yourself.",
+                "Mistakes are proof that you are trying and learning."
+            ]
+        },
+        {
+            "tag": "shame",
+            "patterns": [
+                "I am ashamed",
+                "I am embarrassed",
+                "I want to hide",
+                "Everyone judges me"
+            ],
+            "responses": [
+                "Shame thrives in secrecy. Sharing your feelings can help diminish its power.",
+                "You are not what you did. You are a person worthy of love and respect.",
+                "Everyone has moments they aren't proud of. It doesn't define your worth.",
+                "Try to talk to yourself like you would a friend in the same situation."
+            ]
+        },
+        {
+            "tag": "anger_management",
+            "patterns": [
+                "How to stop being angry",
+                "Control my temper",
+                "I snap at everyone",
+                "Anger issues"
+            ],
+            "responses": [
+                "Recognize the early signs of anger in your body (heat, tension).",
+                "Take a 'time out' when you feel escalated. Walk away for 5 minutes.",
+                "Use 'I' statements to express needs without blaming (e.g., 'I feel hurt when...').",
+                "Exercise is a great way to release the physical energy of anger."
+            ]
+        },
+        {
+            "tag": "relationship_conflict",
+            "patterns": [
+                "I had a fight with my partner",
+                "We are arguing all the time",
+                "My spouse doesn't understand me",
+                "Toxic relationship",
+                "I want to break up but I can't"
+            ],
+            "responses": [
+                "Conflict is stressful. Try to use 'I' statements like 'I feel hurt when...' instead of accusing.",
+                "It's okay to take a break from the argument to cool down before talking again.",
+                "Healthy relationships are built on respect. If you don't feel respected, that's a warning sign.",
+                "Listening is just as important as speaking. Try to understand their perspective too."
+            ]
+        },
+        {
+            "tag": "work_life_balance",
+            "patterns": [
+                "I work too much",
+                "My boss is demanding",
+                "I have no free time",
+                "Work is killing me",
+                "Office stress"
+            ],
+            "responses": [
+                "Your health is more important than any deadline. It is okay to set boundaries.",
+                "Try to leave work at work. Create a ritual to switch off when you finish your day.",
+                "Schedule rest like you schedule meetings. It is essential, not optional.",
+                "Talk to your manager if the workload is unsustainable. You are a human, not a machine."
+            ]
+        },
+        {
+            "tag": "financial_stress",
+            "patterns": [
+                "I have no money",
+                "I am in debt",
+                "Financial anxiety",
+                "I can't pay my bills",
+                "Worried about money"
+            ],
+            "responses": [
+                "Financial stress is incredibly heavy. Focus on what you can control right now.",
+                "Creating a simple budget can give you a sense of control over the chaos.",
+                "There are non-profit credit counseling agencies that can help you make a plan for free.",
+                "Your net worth is not your self-worth. You are valuable regardless of your bank account."
+            ]
+        },
+        {
+            "tag": "parenting_stress",
+            "patterns": [
+                "My kids are driving me crazy",
+                "Parenting is so hard",
+                "I feel like a bad mom",
+                "I feel like a bad dad",
+                "Overwhelmed parent"
+            ],
+            "responses": [
+                "Parenting is one of the hardest jobs in the world. You are doing a great job.",
+                "It takes a village. Don't be afraid to ask for help or a break.",
+                "Give yourself grace. There is no such thing as a perfect parent.",
+                "Take 5 minutes for yourself. You can't pour from an empty cup."
+            ]
+        },
+        {
+            "tag": "ptsd",
+            "patterns": [
+                "I have flashbacks",
+                "I feel like I'm reliving the trauma",
+                "nightmares about past events",
+                "constantly on guard",
+                "feeling hypervigilant",
+                "avoiding reminders of the trauma",
+                "I had a traumatic experience"
+            ],
+            "responses": [
+                "It sounds like you might be experiencing symptoms related to trauma. Let me share some information."
+            ]
+        },
+        {
+            "tag": "ocd",
+            "patterns": [
+                "I have intrusive thoughts",
+                "I can't stop checking things",
+                "obsessive thoughts won't go away",
+                "compulsive counting",
+                "I need everything to be perfect",
+                "repetitive rituals"
+            ],
+            "responses": [
+                "These sound like symptoms often associated with Obsessive-Compulsive Disorder. Here is some guidance."
+            ]
+        },
+        {
+            "tag": "psychosis",
+            "patterns": [
+                "I hear voices that others don't",
+                "seeing things that aren't there",
+                "feeling like people are plotting against me",
+                "delusions",
+                "my thoughts are disorganized",
+                "hallucinations"
+            ],
+            "responses": [
+                "It's important to take these symptoms seriously. Here is some information about psychotic disorders."
+            ]
+        },
+        {
+            "tag": "addiction",
+            "patterns": [
+                "drinking too much alcohol",
+                "drug problem",
+                "I can't stop using substances",
+                "acting impulsively",
+                "withdrawal symptoms",
+                "substance misuse"
+            ],
+            "responses": [
+                "Substance use can be challenging. Here is some information on behavioral issues and addiction."
+            ]
+        },
+        {
+            "tag": "cognitive",
+            "patterns": [
+                "memory problems",
+                "I keep forgetting important things",
+                "I can't concentrate",
+                "brain fog",
+                "difficulty completing tasks",
+                "distracted easily"
+            ],
+            "responses": [
+                "Cognitive difficulties can be frustrating. Here is some information that might help."
+            ]
+        },
+        {
+            "tag": "depression",
+            "patterns": [
+                "I feel sad all the time",
+                "I have lost interest in everything",
+                "feeling hopeless",
+                "I have no energy",
+                "constantly tired",
+                "I feel down",
+                "depressed"
+            ],
+            "responses": [
+                "I hear that you're feeling down. Let's look at some information about depression."
+            ]
+        },
+        {
+            "tag": "anxiety",
+            "patterns": [
+                "I feel anxious",
+                "excessive worrying",
+                "I can't relax",
+                "panic attacks",
+                "my heart is racing",
+                "feeling restless",
+                "I'm worried about everything"
+            ],
+            "responses": [
+                "It sounds like you're experiencing anxiety. Here is some helpful information."
+            ]
+        },
+        {
+            "tag": "sleep_advice",
+            "patterns": [
+                "I can't sleep",
+                "tips for better sleep",
+                "insomnia help",
+                "sleeping too much",
+                "tired all the time"
+            ],
+            "responses": [
+                "Sleep is vital. Here are some tips: Stick to a schedule, limit screens before bed, and create a calming routine."
+            ]
+        },
+        {
+            "tag": "diet_nutrition",
+            "patterns": [
+                "foods for mental health",
+                "loss of appetite",
+                "eating too much",
+                "what should I eat",
+                "nutrition advice"
+            ],
+            "responses": [
+                "Nutrition impacts mood. Try to eat regular meals, stay hydrated, and include Omega-3s. Avoid excessive sugar/caffeine."
+            ]
+        },
+        {
+            "tag": "exercise_motivation",
+            "patterns": [
+                "benefits of exercise",
+                "I don't want to workout",
+                "should I exercise",
+                "yoga for anxiety",
+                "physical activity"
+            ],
+            "responses": [
+                "Exercise releases endorphins! Even a short walk helps. Find something you enjoy like dancing or yoga."
+            ]
+        },
+        {
+            "tag": "social_connection",
+            "patterns": [
+                "I feel lonely",
+                "how to make friends",
+                "social anxiety",
+                "feeling isolated",
+                "withdrawal"
+            ],
+            "responses": [
+                "Connecting with others is important. Try reaching out to a friend, joining a group, or volunteering."
+            ]
+        },
+        {
+            "tag": "coping_general",
+            "patterns": [
+                "how to cope",
+                "coping strategies",
+                "stress management techniques",
+                "I need a distraction",
+                "calming techniques"
+            ],
+            "responses": [
+                "Healthy coping strategies include journaling, meditation, deep breathing, and grounding techniques."
+            ]
+        },
+        {
+            "tag": "crisis_severe",
+            "patterns": [
+                "I want to give up",
+                "suicidal thoughts",
+                "I can't go on",
+                "hurt myself",
+                "emergency"
+            ],
+            "responses": [
+                "Please reach out for help immediately. You are not alone. Contact 988 or text HOME to 741741."
+            ]
+        },
+        {
+            "tag": "mood_checkin",
+            "patterns": [
+                "I feel happy",
+                "I feel terrible",
+                "my mood is low today",
+                "rating my mood",
+                "feeling great"
+            ],
+            "responses": [
+                "Thanks for sharing. Tracking your mood helps. Is there a specific reason you're feeling this way?"
+            ]
+        },
+        {
+            "tag": "sentiment_negative",
+            "patterns": [
+                "I feel bad",
+                "I am sad",
+                "Feeling down",
+                "Not having a good day",
+                "I feel terrible"
+            ],
+            "responses": [
+                "I hear you. It sounds like a tough time. Do you want to talk about what's making you feel this way?"
+            ]
+        },
+        {
+            "tag": "sentiment_positive",
+            "patterns": [
+                "I feel good",
+                "Great day",
+                "Happy",
+                "Things are looking up",
+                "I am excited"
+            ],
+            "responses": [
+                "That's wonderful to hear! I'm glad things are going well for you. What's the best part of your day so far?"
+            ]
+        },
+        {
+            "tag": "emotion_anxiety",
+            "patterns": [
+                "I am anxious",
+                "So worried",
+                "Can't stop thinking",
+                "Nervous",
+                "Panic"
+            ],
+            "responses": [
+                "It sounds like anxiety is high right now. Let's try to slow down. Would you like to try a breathing exercise?"
+            ]
+        },
+        {
+            "tag": "emotion_anger",
+            "patterns": [
+                "I am so mad",
+                "Furious",
+                "I hate this",
+                "Angry"
+            ],
+            "responses": [
+                "Anger is a valid emotion. It usually tells us a boundary has been crossed. Want to vent about it?"
+            ]
+        },
+        {
+            "tag": "crisis_suicide",
+            "patterns": [
+                "I want to kill myself",
+                "better off dead",
+                "suicide",
+                "want to die",
+                "end it all"
+            ],
+            "responses": [
+                "Please listen: You are not alone and there is help. Please call 988 or text HOME to 741741 immediately. I am a bot, but there are humans who want to support you right now."
+            ]
+        },
+        {
+            "tag": "crisis_harm",
+            "patterns": [
+                "I want to hurt myself",
+                "cutting",
+                "self harm",
+                "pain to feel real"
+            ],
+            "responses": [
+                "I'm concerned for your safety. Please try a safe alternative like holding an ice cube. Reach out to a professional or trusted person."
+            ]
+        },
+        {
+            "tag": "symptom_insomnia",
+            "patterns": [
+                "Can't sleep",
+                "Insomnia",
+                "Awake all night",
+                "Restless sleep"
+            ],
+            "responses": [
+                "Sleep troubles are exhausting. Have you tried our sleep hygiene tips or a relaxation exercise?"
+            ]
+        },
+        {
+            "tag": "symptom_panic",
+            "patterns": [
+                "Heart racing",
+                "Can't breathe",
+                "Dying feeling",
+                "Panic attack"
+            ],
+            "responses": [
+                "You might be having a panic attack. It is scary but it will pass. Breathe with me: In... 2... 3... 4... Out... 2... 3... 4..."
+            ]
+        },
+        {
+            "tag": "symptom_mood",
+            "patterns": [
+                "Feeling low",
+                "Depressed mood",
+                "No energy",
+                "Sadness"
+            ],
+            "responses": [
+                "Low mood can be heavy. Sometimes small steps help. Have you eaten or moved your body today?"
+            ]
+        },
+        {
+            "tag": "edu_cbt",
+            "patterns": [
+                "What is CBT?",
+                "Cognitive Behavioral Therapy",
+                "Change my thoughts"
+            ],
+            "responses": [
+                "CBT is a therapy that helps you identify and change negative thought patterns that affect your behavior and emotions."
+            ]
+        },
+        {
+            "tag": "edu_mindfulness",
+            "patterns": [
+                "What is mindfulness?",
+                "How to meditate",
+                "Mindfulness definition"
+            ],
+            "responses": [
+                "Mindfulness is the practice of being present in the moment without judgment. It helps reduce stress and anxiety."
+            ]
+        },
+        {
+            "tag": "social_anxiety",
+            "patterns": [
+                "I am afraid of people",
+                "I have social anxiety",
+                "I hate parties",
+                "I get nervous in crowds",
+                "judged by others"
+            ],
+            "responses": [
+                "Social anxiety is tough. You are not alone in feeling this way.",
+                "It is okay to take small steps. You don't have to face everything at once.",
+                "Remember, others are often too focused on themselves to judge you."
+            ]
+        },
+        {
+            "tag": "lgbtq_support",
+            "patterns": [
+                "I want to come out",
+                "Gender identity",
+                "LGBTQ support",
+                "My parents won't accept me",
+                "Transgender help"
+            ],
+            "responses": [
+                "Your identity is valid and beautiful. You deserve to be your authentic self.",
+                "Coming out is a personal journey. There is no right or wrong way or time.",
+                "Consider reaching out to The Trevor Project for specialized LGBTQ+ support.",
+                "Found family—friends who accept you—can be just as important as biological family."
+            ]
+        },
+        {
+            "tag": "seasonal_depression",
+            "patterns": [
+                "I hate winter",
+                "Seasonal depression",
+                "SAD symptoms",
+                "Winter blues",
+                "Department of darkness"
+            ],
+            "responses": [
+                "Seasonal Affective Disorder (SAD) is real. Lack of sunlight affects serotonin.",
+                "Light therapy lamps (10,000 lux) can be very effective for morning use.",
+                "Try to get outside during daylight hours, even if it's cloudy.",
+                "Vitamin D supplements may help, but check with a doctor first."
+            ]
+        },
+        {
+            "tag": "caregiver_burnout",
+            "patterns": [
+                "Taking care of my parents is hard",
+                "Caregiver stress",
+                "I am exhausted helping everyone",
+                "Compassion fatigue"
+            ],
+            "responses": [
+                "Caregiving is heroic but exhausting work. 'Compassion fatigue' is a real condition.",
+                "You cannot pour from an empty cup. Respite care is not selfish; it's necessary.",
+                "It is okay to feel resentful sometimes. It doesn't mean you don't love them.",
+                "Please find a support group for caregivers. You need to be cared for too."
+            ]
+        },
+        {
+            "tag": "phobias",
+            "patterns": [
+                "I am scared of spiders",
+                "I have a phobia",
+                "Fear of heights",
+                "Irrational fear",
+                "Agoraphobia"
+            ],
+            "responses": [
+                "Phobias are intense fears that can be managed with gradual exposure.",
+                "Avoidance feeds the fear. Small, safe steps towards the fear can shrink it.",
+                "Professional help (Exposure Therapy) is very effective for phobias.",
+                "Breathe through the fear reaction. It is a false alarm from your brain."
+            ]
+        },
+        {
+            "tag": "imposter_syndrome",
+            "patterns": [
+                "I feel like a fraud",
+                "Imposter syndrome",
+                "I don't belong here",
+                "They will find out I'm fake",
+                "I just got lucky"
+            ],
+            "responses": [
+                "Imposter syndrome affects high achievers. You are in the room because you earned it.",
+                "Separate feelings from facts. Look at the evidence of your skills.",
+                "Most successful people feel this way. You are learning, not faking.",
+                "Perfectionism feeds imposter feelings. 'Good enough' is actually great."
+            ]
+        },
+        {
+            "tag": "bullying",
+            "patterns": [
+                "I am being bullied",
+                "Cyberbullying",
+                "People are mean to me",
+                "Harassment online"
+            ],
+            "responses": [
+                "Bullying is never okay. It says more about the bully's pain than your worth.",
+                "Save the evidence (screenshots) and block/report the person immediately.",
+                "Do not engage or reply. That is the reaction they want.",
+                "Reach out to an adult, HR, or a trust and safety team. You don't have to face this alone."
+            ]
+        },
+        {
+            "tag": "bot_status",
+            "patterns": [
+                "How are you?",
+                "How are you doing?",
+                "Are you okay?",
+                "Current status"
+            ],
+            "responses": [
+                "I'm functioning perfectly and ready to help you!",
+                "I'm doing well, thank you for asking. How are you?",
+                "Systems operational and mood is optimistic!",
+                "I am just code, but I feel great helping you."
+            ]
+        },
+        {
+            "tag": "morning_greeting",
+            "patterns": [
+                "Good morning",
+                "Morning",
+                "Wake up",
+                "Rise and shine"
+            ],
+            "responses": [
+                "Good morning! I hope your day starts gently.",
+                "Morning! Ready to face the day together?",
+                "Good morning. Remember to drink some water today.",
+                "Hello! Wishing you a peaceful start to your day."
+            ]
+        },
+        {
+            "tag": "night_greeting",
+            "patterns": [
+                "Good night",
+                "Sleep well",
+                "Going to bed",
+                "Night night"
+            ],
+            "responses": [
+                "Good night. Rest well.",
+                "Sleep is healing. Wishing you sweet dreams.",
+                "Good night! Put your worries on a shelf for tomorrow.",
+                "Rest easy. I'll be here when you wake up."
+            ]
+        },
+        {
+            "tag": "compliment",
+            "patterns": [
+                "You are smart",
+                "You are helpful",
+                "Good bot",
+                "I like you",
+                "You are amazing"
+            ],
+            "responses": [
+                "Thank you! That makes my circuits glow.",
+                "I am happy to be of service.",
+                "You are very kind. I appreciate you too!",
+                "Thanks! I try my best to learn and help."
+            ]
+        },
+        {
+            "tag": "confusion",
+            "patterns": [
+                "I don't understand",
+                "What do you mean?",
+                "Can you explain?",
+                "I am confused"
+            ],
+            "responses": [
+                "I apologize if I was unclear. Let me try to rephrase.",
+                "Let's break it down. What part is confusing you?",
+                "I'm learning too. Getting on the same page is important.",
+                "I want to help. Could you tell me what needs clarifying?"
+            ]
+        },
+        {
+            "tag": "tool_breathing_guide",
+            "patterns": [
+                "Help me breathe",
+                "Start breathing exercise",
+                "I need to calm down now",
+                "Guide me through breathing"
+            ],
+            "responses": [
+                "Let's breathe together. Inhale slowly... [1...2...3...4]. Hold... [1...2...3...4]. Exhale... [1...2...3...4...5...6].",
+                "Follow my lead: Breathe in deep through your nose. Hold it. Now sigh it out through your mouth.",
+                "Box breathing: In for 4, Hold for 4, Out for 4, Hold for 4. Ready? In...",
+                "Focus only on your breath. Is it cool coming in? Warm going out?"
+            ]
+        },
+        {
+            "tag": "tool_grounding_54321",
+            "patterns": [
+                "Grounding technique",
+                "54321 method",
+                "I am dissociating",
+                "Help me get back to reality"
+            ],
+            "responses": [
+                "Let's do 5-4-3-2-1. Find 5 things you see. 4 things you can touch. 3 things you hear. 2 things you smell. 1 thing you taste.",
+                "Look around. Name 5 blue objects you can see right now.",
+                "Feel your feet on the floor. Touch the texture of your shirt. You are here, right now.",
+                "Listen closely. What is the furthest sound you can hear? What is the nearest?"
+            ]
+        },
+        {
+            "tag": "tool_journal_prompt",
+            "patterns": [
+                "What should I write about?",
+                "Journal prompt",
+                "Give me a topic",
+                "I want to journal but don't know what to say"
+            ],
+            "responses": [
+                "Try this: 'What is one thing I learned about myself today?'",
+                "Prompt: 'Write a letter to your past self, forgiving them for a mistake.'",
+                "List 3 things that are going well, no matter how small.",
+                "Describe your perfect day. What does it look like, smell like, feel like?"
+            ]
+        },
+        {
+            "tag": "frustrated",
+            "patterns": [
+                "I am frustrated",
+                "I am so frustrated",
+                "Nothing is working",
+                "I am stuck",
+                "I keep hitting a wall",
+                "So annoying"
+            ],
+            "responses": [
+                "Frustration is energy without a place to go. Take a break and step away for 10 minutes.",
+                "It's okay to be annoyed. Sometimes things just suck.",
+                "Try to break the problem down. What is the smallest next step?",
+                "Scream into a pillow if you need to. Release the pressure."
+            ]
+        },
+        {
+            "tag": "jealous",
+            "patterns": [
+                "I am jealous",
+                "Why them and not me?",
+                "Envy",
+                "Everyone else is doing better",
+                "It's not fair"
+            ],
+            "responses": [
+                "Jealousy often points to something we want for ourselves. Use it as a roadmap, not a weapon.",
+                "Comparison is the thief of joy. focus on your own unique path.",
+                "Celebrate their win, and trust that your time is coming too.",
+                "Abundance is not a pie. There is enough success for everyone."
+            ]
+        },
+        {
+            "tag": "bored",
+            "patterns": [
+                "I am bored",
+                "Nothing to do",
+                "So dull",
+                "I need entertainment",
+                "Life is boring"
+            ],
+            "responses": [
+                "Boredom is the birthplace of creativity. Let your mind wander.",
+                "Try something new: Read a random article, draw a doodle, or learn a magic trick.",
+                "Call a friend you haven't spoken to in a while.",
+                "Organize one small drawer. Accomplishment feels good."
+            ]
+        },
+        {
+            "tag": "hopeful",
+            "patterns": [
+                "I feel hopeful",
+                "Things are getting better",
+                "I see a light",
+                "Optimistic",
+                "Good feeling"
+            ],
+            "responses": [
+                "Hold onto that feeling! Hope is powerful fuel.",
+                "It's wonderful to hear you are feeling optimistic.",
+                "Write down what is giving you hope right now, so you can remember it later.",
+                "Whatever you are doing, keep doing it!"
+            ]
+        },
+        {
+            "tag": "indifferent",
+            "patterns": [
+                "I don't care",
+                "Whatever",
+                "Numb",
+                "It doesn't matter",
+                "Meh"
+            ],
+            "responses": [
+                "Feeling numb can be a defense mechanism. It's okay to rest there for a bit.",
+                "Sometimes 'meh' is just a pause before the next emotion.",
+                "If you feel this way often, try to engage your senses with strong flavors or cold water.",
+                "Apathy can sometimes mask overwhelm. Are you doing too much?"
+            ]
+        },
+        {
+            "tag": "self_care_ideas",
+            "patterns": [
+                "Self care ideas",
+                "How to take care of myself",
+                "I need a treat",
+                "Pamper myself"
+            ],
+            "responses": [
+                "Self-care isn't just bubble baths. It's also saying 'no' and setting boundaries.",
+                "Take a warm shower and put on fresh clothes.",
+                "Unplug for an hour. No phone, no news, just you.",
+                "Cook a meal you truly enjoy, just for the taste of it."
+            ]
+        },
+        {
+            "tag": "hydration",
+            "patterns": [
+                "Drink water",
+                "Am I dehydrated?",
+                "Headache",
+                "Thirsty"
+            ],
+            "responses": [
+                "Have you had a glass of water lately? Your brain needs it.",
+                "Dehydration often mimics anxiety or fatigue. Drink up!",
+                "Try drinking a full glass of water before your next coffee.",
+                "Cheers to hydration! It is the foundation of wellness."
+            ]
+        },
+        {
+            "tag": "nature_walk",
+            "patterns": [
+                "Go outside",
+                "Nature helps",
+                "Walk in the park",
+                "Fresh air"
+            ],
+            "responses": [
+                "Nature is a great healer. Can you step outside for 5 minutes?",
+                "Look at the sky. It reminds us how big the world is.",
+                "Even a walk around the block can reset your nervous system.",
+                "Notice the trees, the birds, the wind. Connect with the living world."
+            ]
+        },
+        {
+            "tag": "comfort_food",
+            "patterns": [
+                "I want comfort food",
+                "Stress eating",
+                "Pizza",
+                "Chocolate",
+                "Ice cream"
+            ],
+            "responses": [
+                "Food is comfort and fuel. Enjoy it properly without guilt.",
+                "Mindful eating: Savor every bite, notice the texture and flavor.",
+                "It is okay to eat for comfort sometimes. Be kind to yourself.",
+                "Balance is key. Enjoy your treat!"
+            ]
+        },
+        {
+            "tag": "school_stress",
+            "patterns": [
+                "School is hard",
+                "So much homework",
+                "Teacher hates me",
+                "Failing failing",
+                "Grades"
+            ],
+            "responses": [
+                "Grades do not define your intelligence or your worth.",
+                "Take it one assignment at a time. The mountain is climbed by steps.",
+                "Talk to your teacher. They often want to help more than you think.",
+                "Remember to rest. Your brain needs sleep to learn."
+            ]
+        },
+        {
+            "tag": "exam_anxiety",
+            "patterns": [
+                "I have a test",
+                "Exam stress",
+                "I will fail my exam",
+                "Test anxiety",
+                "Studying is hard"
+            ],
+            "responses": [
+                "You have prepared. Trust your brain to do the rest.",
+                "Deep breath. Read the question twice before answering.",
+                "Visualizing yourself succeeding can actually help performance.",
+                "This one test will not determine your entire future."
+            ]
+        },
+        {
+            "tag": "interview_nerves",
+            "patterns": [
+                "I have a job interview",
+                "Interview tips",
+                "Nervous for interview",
+                "What if I mess up the interview?"
+            ],
+            "responses": [
+                "They invited you because they already think you can do the job.",
+                "Power pose! Stand tall for 2 minutes before you go in.",
+                "Remember, you are interviewing them too. Is this a good fit for YOU?",
+                "It's okay to pause and think before answering difficult questions."
+            ]
+        },
+        {
+            "tag": "moving_stress",
+            "patterns": [
+                "I am moving house",
+                "Relocation stress",
+                "Packing is stressful",
+                "New city"
+            ],
+            "responses": [
+                "Moving is one of life's biggest stressors. Be patient with the chaos.",
+                "Label your boxes. Future you will thank you significantly.",
+                "Say goodbye to your old home properly. It helps with closure.",
+                "It takes time to feel at home in a new place. Give it 6 months."
+            ]
+        },
+        {
+            "tag": "meaning_of_life",
+            "patterns": [
+                "What is the meaning of life?",
+                "Why are we here?",
+                "Is life meaningless?",
+                "Philosophy"
+            ],
+            "responses": [
+                "The meaning of life is whatever you give it meaning to be.",
+                "To help others, to learn, to love, to experience pizza. You choose.",
+                "We are the universe experiencing itself.",
+                "Maybe the point is just to be here, witnessing this moment."
+            ]
+        },
+        {
+            "tag": "purpose",
+            "patterns": [
+                "I have no purpose",
+                "What should I do with my life?",
+                "I feel lost",
+                "Directionless"
+            ],
+            "responses": [
+                "Purpose isn't found, it's created. What do you care about?",
+                "Start small. Help one person. Fix one thing. Purpose grows.",
+                "You don't need a grand destiny. Being a kind person is a huge purpose.",
+                "Explore what makes you lose track of time. That's a clue."
+            ]
+        }
+    ]
+}
