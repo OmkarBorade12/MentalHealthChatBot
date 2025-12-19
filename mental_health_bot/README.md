@@ -13,7 +13,7 @@ A comprehensive mental health support application featuring an AI-powered sentim
 ## 🛠️ Tech Stack
 
 *   **Backend**: Flask (Python)
-*   **Database**: SQLAlchemy (SQLite for development / MySQL compatible)
+*   **Database**: MySQL 
 *   **AI/ML**: Scikit-Learn, NLTK, TextBlob
 *   **Frontend**: HTML5, CSS3, JavaScript (Bootstrap 5)
 
@@ -54,3 +54,4 @@ A comprehensive mental health support application featuring an AI-powered sentim
 3.  **Chat**: Use the chat interface to talk about your feelings or ask for advice.
 4.  **Dashboard**: Visit the dashboard to see your mood history and chat logs.
 5.  **Journal**: Write private entries to reflect on your day.
+
