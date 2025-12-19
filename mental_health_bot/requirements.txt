@@ -1,5 +1,0 @@
-flask
-sqlalchemy
-scikit-learn
-nltk
-textblob
