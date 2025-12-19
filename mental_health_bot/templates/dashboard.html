@@ -1,0 +1,204 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="app-container" style="display: block; overflow-y: auto;">
+    <div style="max-width: 1000px; margin: 0 auto; padding: 2rem 1rem;">
+
+        <!-- Header -->
+        <div class="chat-header"
+            style="border-radius: 16px; margin-bottom: 2rem; background: var(--glass-bg); backdrop-filter: blur(12px);">
+            <div class="bot-info">
+                <div class="bot-details">
+                    <h1
+                        style="font-size: 1.5rem; margin: 0; background: linear-gradient(to right, #fff, #94a3b8); background-clip: text; -webkit-background-clip: text; -webkit-text-fill-color: transparent;">
+                        Your Wellness Journey</h1>
+                    <div class="status-badge" style="font-size: 1rem;">
+                        Streak: <span style="color: #fbbf24; font-weight: bold; margin-left: 4px;">{{ streak }}
+                            Days</span> 🔥
+                    </div>
+                </div>
+            </div>
+
+            <div class="nav-actions">
+                <div id="realtime-clock"
+                    style="color: var(--text-secondary); font-family: monospace; font-size: 0.9rem;">Loading...</div>
+                <a href="{{ url_for('journal') }}" class="nav-link"
+                    style="background: var(--primary); color: white; border: none;">
+                    &#128211; Journal
+                </a>
+                <a href="{{ url_for('index') }}" class="nav-link"
+                    style="background: rgba(255,255,255,0.05); border: 1px solid var(--glass-border);">
+                    &larr; Back to Chat
+                </a>
+            </div>
+        </div>
+
+        <!-- content grid -->
+        <div style="display: grid; grid-template-columns: 1fr; gap: 2rem;">
+
+            <!-- Mood Chart -->
+            <div class="auth-box" style="width: 100%; max-width: none; padding: 2rem; box-sizing: border-box;">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 1.5rem;">
+                    <h3 style="margin: 0; color: var(--text-primary);">Mood Trends</h3>
+                    <select id="chartFilter" onchange="updateChartRange()"
+                        style="background: rgba(0,0,0,0.3); color: white; border: 1px solid var(--glass-border); padding: 0.5rem; border-radius: 8px;">
+                        <option value="7">Last 7 Days</option>
+                        <option value="30">Last 30 Days</option>
+                        <option value="all">All Time</option>
+                    </select>
+                </div>
+                <div style="height: 300px; width: 100%;">
+                    <canvas id="moodChart"></canvas>
+                </div>
+            </div>
+
+            <!-- Recent Activity -->
+            <div class="auth-box" style="width: 100%; max-width: none; padding: 2rem; box-sizing: border-box;">
+                <h3 style="margin: 0 0 1.5rem 0; color: var(--text-primary);">Recent Check-ins</h3>
+                <div style="max-height: 300px; overflow-y: auto; padding-right: 0.5rem;">
+                    {% if mood_dates %}
+                    <table style="width: 100%; border-collapse: separate; border-spacing: 0 8px;">
+                        <thead>
+                            <tr style="color: var(--text-secondary); font-size: 0.9rem; text-align: left;">
+                                <th style="padding: 0.5rem;">Date</th>
+                                <th style="padding: 0.5rem;">Mood</th>
+                                <th style="padding: 0.5rem; text-align: right;">Score</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for i in range(mood_dates|length) %}
+                            <tr style="background: rgba(255,255,255,0.03); transition: background 0.2s;">
+                                <td style="padding: 1rem; border-radius: 12px 0 0 12px; color: var(--text-primary);">{{
+                                    mood_dates[i][:10] }}</td>
+                                <td style="padding: 1rem;">
+                                    <span
+                                        style="background: rgba(99, 102, 241, 0.2); color: #818cf8; padding: 4px 12px; border-radius: 20px; font-size: 0.85rem;">
+                                        {{ mood_tags[i] }}
+                                    </span>
+                                </td>
+                                <td
+                                    style="padding: 1rem; border-radius: 0 12px 12px 0; text-align: right; font-weight: 600;">
+                                    {{ mood_scores[i] }}/10</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    {% else %}
+                    <div style="text-align: center; padding: 2rem; color: var(--text-secondary);">
+                        <p>No check-ins yet. Start tracking today!</p>
+                    </div>
+                    {% endif %}
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script id="mood-dates" type="application/json">{{ mood_dates | tojson }}</script>
+<script id="mood-scores" type="application/json">{{ mood_scores | tojson }}</script>
+
+<script>
+    // Realtime Clock
+    function updateClock() {
+        const now = new Date();
+        document.getElementById('realtime-clock').textContent = now.toLocaleDateString(undefined, { weekday: 'short', month: 'short', day: 'numeric' }) + ' | ' + now.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+    }
+    setInterval(updateClock, 1000);
+    updateClock();
+
+    // Mood Chart
+    const datesRaw = JSON.parse(document.getElementById('mood-dates').textContent);
+    const scores = JSON.parse(document.getElementById('mood-scores').textContent);
+
+    let chartInstance = null;
+
+    function initChart(limit) {
+        let filteredDates = datesRaw;
+        let filteredScores = scores;
+
+        if (limit !== 'all') {
+            const days = parseInt(limit);
+            // Simple slice for now since data is ordered
+            filteredDates = datesRaw.slice(-days);
+            filteredScores = scores.slice(-days);
+        }
+
+        const labels = filteredDates.map(d => {
+            const date = new Date(d);
+            return date.toLocaleDateString(undefined, { month: 'short', day: 'numeric' });
+        });
+
+        const ctx = document.getElementById('moodChart').getContext('2d');
+
+        // Destroy existing chart if any
+        if (chartInstance) {
+            chartInstance.destroy();
+        }
+
+        // Gradient for chart
+        const gradient = ctx.createLinearGradient(0, 0, 0, 300);
+        gradient.addColorStop(0, 'rgba(99, 102, 241, 0.5)'); // Indigo
+        gradient.addColorStop(1, 'rgba(99, 102, 241, 0.0)');
+
+        chartInstance = new Chart(ctx, {
+            type: 'line',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Well-being Score',
+                    data: filteredScores,
+                    borderColor: '#6366f1', // Indigo 500
+                    backgroundColor: gradient,
+                    borderWidth: 3,
+                    tension: 0.4,
+                    fill: true,
+                    pointBackgroundColor: '#1e293b',
+                    pointBorderColor: '#6366f1',
+                    pointBorderWidth: 2,
+                    pointRadius: 6,
+                    pointHoverRadius: 8
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                scales: {
+                    y: {
+                        min: 0,
+                        max: 10,
+                        grid: { color: 'rgba(255,255,255,0.05)' },
+                        ticks: { color: '#94a3b8', font: { family: "'Inter', sans-serif" } }
+                    },
+                    x: {
+                        grid: { display: false },
+                        ticks: { color: '#94a3b8', font: { family: "'Inter', sans-serif" } }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        display: false
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(30, 41, 59, 0.9)',
+                        titleColor: '#f8fafc',
+                        bodyColor: '#cbd5e1',
+                        padding: 12,
+                        cornerRadius: 8,
+                        borderColor: 'rgba(255,255,255,0.1)',
+                        borderWidth: 1
+                    }
+                }
+            }
+        });
+    }
+
+    function updateChartRange() {
+        const limit = document.getElementById('chartFilter').value;
+        initChart(limit);
+    }
+
+    // Initialize with default (7 days)
+    initChart(7);
+</script>
+{% endblock %}

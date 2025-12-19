@@ -1,0 +1,893 @@
+{
+    "conditions": {
+        "anxiety": {
+            "brief": "Anxiety is a feeling of fear, dread, and uneasiness.",
+            "symptoms": [
+                "Concentration problems",
+                "Restlessness",
+                "Uncontrolled feelings of worry",
+                "Sleep problems",
+                "Panic attacks",
+                "Excessive worry",
+                "Sleep disturbances",
+                "Irritability"
+            ],
+            "coping": [
+                "Deep breathing (4-7-8)",
+                "Progressive muscle relaxation",
+                "Grounding techniques"
+            ],
+            "symptom_details": [
+                {
+                    "name": "Excessive worry",
+                    "desc": "Persistent, uncontrollable thoughts about future or safety",
+                    "severity": "Daily interference, physical symptoms present"
+                },
+                {
+                    "name": "Restlessness",
+                    "desc": "Inability to relax, feeling 'on edge'",
+                    "severity": "Severe if constant"
+                },
+                {
+                    "name": "Panic attacks",
+                    "desc": "Sudden intense fear, palpitations, sweating, trembling",
+                    "severity": "Recurrent, unpredictable"
+                },
+                {
+                    "name": "Sleep disturbances",
+                    "desc": "Trouble falling or staying asleep",
+                    "severity": "Chronic insomnia"
+                },
+                {
+                    "name": "Concentration problems",
+                    "desc": "Difficulty focusing or making decisions",
+                    "severity": "Severe if affecting work/school"
+                }
+            ],
+            "precautions": [
+                "Limit caffeine and sugar intake",
+                "Practice deep breathing exercises",
+                "Question the validity of anxious thoughts",
+                "Exercise regularly to reduce tension",
+                "Prioritize sleep hygiene"
+            ]
+        },
+        "depression": {
+            "brief": "Depression is a mood disorder that causes a persistent feeling of sadness and loss of interest.",
+            "symptoms": [
+                "Persistent sad, anxious, or 'empty' mood",
+                "Loss of interest (anhedonia)",
+                "Loss of interest in hobbies",
+                "Feelings of hopelessness",
+                "Persistent sadness",
+                "Fatigue / low energy",
+                "Hopelessness",
+                "Irritability"
+            ],
+            "coping": [
+                "Reach out to a friend",
+                "Set small, manageable goals",
+                "Exercise (even a short walk)"
+            ],
+            "symptom_details": [
+                {
+                    "name": "Persistent sadness",
+                    "desc": "Feeling down most of the day, nearly every day",
+                    "severity": "Duration > 2 weeks, impacts daily functioning"
+                },
+                {
+                    "name": "Loss of interest",
+                    "desc": "No pleasure in activities once enjoyed",
+                    "severity": "Withdrawal from social/work life"
+                },
+                {
+                    "name": "Fatigue / low energy",
+                    "desc": "Constant tiredness, lack of motivation",
+                    "severity": "Severe if daily tasks become impossible"
+                },
+                {
+                    "name": "Hopelessness",
+                    "desc": "Feeling future is bleak, no way forward",
+                    "severity": "Severe if linked to suicidal ideation"
+                },
+                {
+                    "name": "Irritability",
+                    "desc": "Easily angered or frustrated",
+                    "severity": "Frequent, disproportionate reactions"
+                }
+            ],
+            "precautions": [
+                "Maintain a consistent sleep schedule",
+                "Engage in regular physical activity",
+                "Reach out to trusted friends or family",
+                "Break tasks into small, manageable steps",
+                "Seek professional help if feelings persist"
+            ]
+        },
+        "panic_disorder": {
+            "brief": "Panic disorder involves repeated episodes of sudden feelings of intense anxiety and fear or terror (panic attacks).",
+            "symptoms": [
+                "Sudden and repeated panic attacks",
+                "Feeling of being out of control",
+                "Fear of death or impending doom"
+            ],
+            "coping": [
+                "Focus on an object in the room",
+                "Repeat a mantra: 'I am safe'",
+                "Breathe slowly"
+            ]
+        },
+        "ptsd": {
+            "brief": "Post-Traumatic Stress Disorder (PTSD) creates intense reactions to reminders of trauma.",
+            "symptoms": [
+                "Flashbacks",
+                "avoidance of triggers",
+                "Severe anxiety",
+                "Nightmares",
+                "Avoidance",
+                "Hypervigilance"
+            ],
+            "coping": [
+                "Grounding (5-4-3-2-1)",
+                "Carry a comfort object",
+                "Safety planning"
+            ],
+            "symptom_details": [
+                {
+                    "name": "Flashbacks",
+                    "desc": "Reliving traumatic events",
+                    "severity": "Frequent, vivid, distressing"
+                },
+                {
+                    "name": "Hypervigilance",
+                    "desc": "Constantly alert, scanning environment",
+                    "severity": "Severe if exhausting daily"
+                },
+                {
+                    "name": "Avoidance",
+                    "desc": "Avoiding places, people, or thoughts related to trauma",
+                    "severity": "Impacts social/work life"
+                },
+                {
+                    "name": "Nightmares",
+                    "desc": "Disturbing dreams related to trauma",
+                    "severity": "Frequent, sleep disruption"
+                }
+            ],
+            "precautions": [
+                "Practice grounding techniques (e.g., 5-4-3-2-1)",
+                "Establish a safe and calm environment",
+                "Limit exposure to triggering media",
+                "Join a support group",
+                "Consider therapies like EMDR or CBT"
+            ]
+        },
+        "ocd": {
+            "brief": "OCD involves unwanted thoughts (obsessions) and repetitive behaviors (compulsions).",
+            "symptoms": [
+                "Compulsive behaviors",
+                "Need for symmetry",
+                "Unwanted forbidden thoughts",
+                "Fear of germs",
+                "Intrusive thoughts",
+                "Compulsive checking",
+                "Perfectionism"
+            ],
+            "coping": [
+                "Delay the compulsion",
+                "Agree with the thought ('Maybe')",
+                "Focus on the present"
+            ],
+            "symptom_details": [
+                {
+                    "name": "Intrusive thoughts",
+                    "desc": "Unwanted repetitive thoughts",
+                    "severity": "Severe if distressing daily"
+                },
+                {
+                    "name": "Compulsive behaviors",
+                    "desc": "Repetitive actions (checking, cleaning, counting)",
+                    "severity": "Time-consuming (>1 hr/day)"
+                },
+                {
+                    "name": "Perfectionism",
+                    "desc": "Extreme need for order/control",
+                    "severity": "Impacts flexibility and relationships"
+                }
+            ],
+            "precautions": [
+                "Identify and label intrusive thoughts",
+                "Delay acting on compulsions (ERP techniques)",
+                "Practice mindfulness and observation of thoughts",
+                "Maintain a balanced lifestyle",
+                "Consult a specialist for ERP therapy"
+            ]
+        },
+        "bipolar": {
+            "brief": "Bipolar disorder involves extreme mood swings including emotional highs (mania) and lows (depression).",
+            "symptoms": [
+                "Manic episodes",
+                "Depressive episodes",
+                "Racing thoughts",
+                "Risk-taking behavior"
+            ],
+            "coping": [
+                "Strict sleep schedule",
+                "Mood tracking",
+                "medication adherence"
+            ]
+        },
+        "adhd": {
+            "brief": "ADHD affects attention, hyperactivity, and impulsivity.",
+            "symptoms": [
+                "Difficulty focusing",
+                "Restlessness",
+                "Disorganization",
+                "Time blindness"
+            ],
+            "coping": [
+                "Body doubling",
+                "Pomodoro timer",
+                "Visual lists"
+            ]
+        },
+        "eating_disorder": {
+            "brief": "Eating disorders involve unhealthy relationships with food and body image.",
+            "symptoms": [
+                "Restriction",
+                "Bingeing",
+                "Purging",
+                "Distorted body image"
+            ],
+            "coping": [
+                "Eat mechanically (on schedule)",
+                "Avoid body checking",
+                "Reach out to support"
+            ]
+        },
+        "social_anxiety": {
+            "brief": "Social anxiety disorder is intense fear of being judged or humiliated in social situations.",
+            "symptoms": [
+                "Fear of interacting with strangers",
+                "Worrying about embarrassing yourself",
+                "Avoiding speaking to people",
+                "Physical symptoms like blushing, sweating"
+            ],
+            "coping": [
+                "Challenge negative thoughts",
+                "Practice small social exposures",
+                "Focus on others, not yourself"
+            ]
+        },
+        "phobias": {
+            "brief": "A phobia is an excessive and irrational fear reaction to a specific object or situation.",
+            "symptoms": [
+                "Immediate feeling of intense fear",
+                "Panic attacks",
+                "Doing everything to avoid the trigger"
+            ],
+            "coping": [
+                "Gradual exposure therapy",
+                "Deep breathing during exposure",
+                "Recognizing the phobia is irrational but real to you"
+            ]
+        },
+        "burnout": {
+            "brief": "Burnout is a state of emotional, physical, and mental exhaustion caused by excessive and prolonged stress.",
+            "symptoms": [
+                "Feeling tired and drained most of the time",
+                "Detachment/feeling alone",
+                "Decreased satisfaction and sense of accomplishment"
+            ],
+            "coping": [
+                "Set boundaries",
+                "Prioritize sleep and exercise",
+                "Take regular breaks",
+                "Seek support from friends or professionals"
+            ]
+        },
+        "imposter_syndrome": {
+            "brief": "Imposter syndrome involves doubting your abilities and feeling like a fraud.",
+            "symptoms": [
+                "Fear of being discovered as a fake",
+                "Attributing success to luck",
+                "Overworking to prove yourself",
+                "imposter",
+                "fraud"
+            ],
+            "coping": [
+                "Separate feelings from facts",
+                "Celebrate your wins",
+                "Talk about it with mentors"
+            ]
+        },
+        "seasonal_affective_disorder": {
+            "brief": "SAD is a type of depression related to changes in seasons, usually beginning in fall.",
+            "symptoms": [
+                "Low energy",
+                "Hypersomnia (oversleeping)",
+                "Weight gain",
+                "Social withdrawal"
+            ],
+            "coping": [
+                "Light therapy (phototherapy)",
+                "Spend time outdoors in sunlight",
+                "Regular exercise"
+            ]
+        },
+        "body_dysmorphic_disorder": {
+            "brief": "BDD is a mental health condition where you can't stop thinking about perceived defects in your appearance.",
+            "symptoms": [
+                "Constantly constantly checking mirror",
+                "Seeking reassurance about appearance",
+                "Avoiding social situations",
+                "Comparing appearance to others"
+            ],
+            "coping": [
+                "Cognitive Behavioral Therapy (CBT)",
+                "Avoid mirror checking",
+                "Focus on what your body can do, not how it looks"
+            ]
+        },
+        "gambling_addiction": {
+            "brief": "Gambling addiction is the uncontrollable urge to keep gambling despite the toll it takes on your life.",
+            "symptoms": [
+                "Chasing losses",
+                "Lying about gambling habits",
+                "Borrowing money to gamble",
+                "Restless when not gambling"
+            ],
+            "coping": [
+                "Support groups (Gamblers Anonymous)",
+                "Hand over financial control to a trusted person",
+                "Identify triggers"
+            ]
+        },
+        "psychosis": {
+            "symptoms": [
+                "Hallucinations",
+                "Delusions",
+                "Disorganized speech"
+            ],
+            "symptom_details": [
+                {
+                    "name": "Hallucinations",
+                    "desc": "Seeing/hearing things not present",
+                    "severity": "Severe if persistent"
+                },
+                {
+                    "name": "Delusions",
+                    "desc": "False beliefs resistant to logic",
+                    "severity": "Severe if dangerous"
+                },
+                {
+                    "name": "Disorganized speech",
+                    "desc": "Incoherent or tangential conversation",
+                    "severity": "Severe if communication impossible"
+                }
+            ],
+            "precautions": [
+                "Ensure adherence to prescribed medication",
+                "Maintain a low-stress environment",
+                "Avoid alcohol and recreational drugs",
+                "Establish a regular daily routine",
+                "Have a crisis plan in place"
+            ],
+            "brief": "Information about psychosis.",
+            "coping": [
+                "Ensure adherence to prescribed medication",
+                "Maintain a low-stress environment",
+                "Avoid alcohol and recreational drugs",
+                "Establish a regular daily routine",
+                "Have a crisis plan in place"
+            ]
+        },
+        "addiction": {
+            "symptoms": [
+                "Substance misuse",
+                "Impulsivity",
+                "Social withdrawal"
+            ],
+            "symptom_details": [
+                {
+                    "name": "Substance misuse",
+                    "desc": "Overuse of alcohol, drugs, or medication",
+                    "severity": "Severe if dependency develops"
+                },
+                {
+                    "name": "Impulsivity",
+                    "desc": "Acting without thinking, risky behaviors",
+                    "severity": "Severe if harmful"
+                },
+                {
+                    "name": "Social withdrawal",
+                    "desc": "Avoiding interactions, isolation",
+                    "severity": "Severe if prolonged"
+                }
+            ],
+            "precautions": [
+                "Identify high-risk triggers",
+                "Build a sober support network",
+                "Develop healthy coping mechanisms for stress",
+                "Remove substances from the environment",
+                "Seek professional counseling"
+            ],
+            "brief": "Information about addiction.",
+            "coping": [
+                "Identify high-risk triggers",
+                "Build a sober support network",
+                "Develop healthy coping mechanisms for stress",
+                "Remove substances from the environment",
+                "Seek professional counseling"
+            ]
+        },
+        "cognitive": {
+            "symptoms": [
+                "Memory problems",
+                "Poor concentration"
+            ],
+            "symptom_details": [
+                {
+                    "name": "Memory problems",
+                    "desc": "Forgetfulness, difficulty recalling information",
+                    "severity": "Severe if daily functioning impaired"
+                },
+                {
+                    "name": "Poor concentration",
+                    "desc": "Easily distracted, difficulty completing tasks",
+                    "severity": "Severe if persistent"
+                }
+            ],
+            "precautions": [
+                "Use organizational aids (calendars, lists)",
+                "Break information into chunks",
+                "Minimize distractions when working",
+                "Engage in brain-stimulating activities",
+                "Ensure adequate rest and nutrition"
+            ],
+            "brief": "Information about cognitive.",
+            "coping": [
+                "Use organizational aids (calendars, lists)",
+                "Break information into chunks",
+                "Minimize distractions when working",
+                "Engage in brain-stimulating activities",
+                "Ensure adequate rest and nutrition"
+            ]
+        }
+    },
+    "grounding_techniques": [
+        {
+            "name": "5-4-3-2-1 Technique",
+            "steps": [
+                "Acknowledge 5 things you see around you.",
+                "Acknowledge 4 things you can touch around you.",
+                "Acknowledge 3 things you hear.",
+                "Acknowledge 2 things you can smell.",
+                "Acknowledge 1 thing you can taste."
+            ]
+        },
+        {
+            "name": "Box Breathing",
+            "steps": [
+                "Inhale for 4 seconds.",
+                "Hold for 4 seconds.",
+                "Exhale for 4 seconds.",
+                "Hold for 4 seconds."
+            ]
+        },
+        {
+            "name": "Categories Game",
+            "steps": [
+                "Choose a category (e.g., Movies, Animals, Colors).",
+                "Name as many items in that category as you can for 1 minute.",
+                "This engages your thinking brain and calms emotions."
+            ]
+        },
+        {
+            "name": "Cold Water Shock",
+            "steps": [
+                "Splash cold water on your face.",
+                "Or hold an ice cube in your hand until it melts.",
+                "This activates the mammalian dive reflex to slow your heart rate."
+            ]
+        }
+    ],
+    "faq": {
+        "finding_therapist": "You can find a therapist through online directories like Psychology Today, or by asking your primary care doctor for a referral. Many insurance companies also have lists of covered providers.",
+        "cost": "Therapy costs vary widely. Some offer sliding scales based on income. Community health centers often provide lower-cost options.",
+        "medication": "Medication is a decision to be made with a psychiatrist or doctor. It can be very helpful for many people in managing symptoms.",
+        "hotlines": "If you are in crisis, please call 988 (USA) for the Suicide & Crisis Lifeline, or text HOME to 741741 for the Crisis Text Line.",
+        "types_of_therapy": "There are many types! CBT focuses on thoughts, DBT on emotions and relationships, and Somatic therapy on the body. It helps to research which might fit your needs.",
+        "first_session": "In the first session, the therapist typically asks about your history, current symptoms, and goals. It's a 'get-to-know-you' meeting to see if it's a good fit.",
+        "insurance": "Many insurance plans cover therapy, but coverage varies. Contact your provider to ask about 'outpatient mental health benefits' and copays.",
+        "helping_friend": "Listen without judgment. validations like 'That sounds really hard' help more than advice. Encourage them to seek professional help if needed."
+    },
+    "wellness_modules": {
+        "sleep": {
+            "description": "Sleep is crucial for mental and emotional resilience.",
+            "tips": [
+                "Stick to a consistent sleep schedule, even on weekends.",
+                "Create a relaxing bedtime routine (reading, warm bath).",
+                "Limit screen time an hour before bed.",
+                "Keep your bedroom cool, dark, and quiet.",
+                "Avoid caffeine and heavy meals close to bedtime."
+            ],
+            "warning_signs": "Chronic insomnia or oversleeping can indicate depression or anxiety."
+        },
+        "diet": {
+            "description": "Nutrition directly affects brain function and mood.",
+            "tips": [
+                "Eat regular meals to maintain blood sugar levels.",
+                "Include Omega-3 fatty acids (fish, flaxseed) for brain health.",
+                "Stay hydrated; dehydration can affect concentration.",
+                "Limit processed foods and sugary snacks.",
+                "Balance caffeine and alcohol intake."
+            ],
+            "warning_signs": "Loss of appetite or overeating can be stress responses."
+        },
+        "exercise": {
+            "description": "Physical activity releases endorphins, natural mood lifters.",
+            "tips": [
+                "Aim for 30 minutes of moderate activity most days.",
+                "Find an activity you enjoy (walking, dancing, swimming).",
+                "Exercise outdoors to get fresh air and sunlight.",
+                "Start small; even 10 minutes helps.",
+                "Yoga can combine movement with mindfulness."
+            ],
+            "warning_signs": "Lack of energy to move or excessive exercise can be concerning."
+        },
+        "social": {
+            "description": "Social connections provide support and reduce isolation.",
+            "tips": [
+                "Schedule regular catch-ups with friends/family.",
+                "Join a club or group with shared interests.",
+                "Volunteer to connect with your community.",
+                "Set boundaries if relationships are draining.",
+                "It's okay to say no to social events if you need rest."
+            ],
+            "warning_signs": "Social withdrawal is a common symptom of depression and anxiety."
+        }
+    },
+    "coping_strategies_extended": {
+        "breathing_exercises": [
+            {
+                "name": "4-7-8 Breathing",
+                "instruction": "Inhale for 4s, hold for 7s, exhale for 8s. Repeat 4 times."
+            },
+            {
+                "name": "Box Breathing",
+                "instruction": "Inhale 4s, hold 4s, exhale 4s, hold 4s. Good for panic."
+            },
+            {
+                "name": "Diaphragmatic Breathing",
+                "instruction": "Breathe deep into your belly, not chest. Hand on stomach should rise."
+            }
+        ],
+        "mindfulness": [
+            {
+                "name": "Senses Check",
+                "instruction": "Notice 5 things you see, 4 feel, 3 hear, 2 smell, 1 taste."
+            },
+            {
+                "name": "Body Scan",
+                "instruction": "Mentally scan body from toes to head, releasing tension in each part."
+            },
+            {
+                "name": "Mindful Walking",
+                "instruction": "Focus entirely on the sensation of your feet touching the ground."
+            }
+        ],
+        "journaling_prompts": [
+            "What is bothering me right now?",
+            "List 3 things I am grateful for today.",
+            "Write a letter to yourself from a compassionate friend's perspective.",
+            "What is the worst case, best case, and most likely outcome?"
+        ],
+        "cbt_exercises": [
+            {
+                "name": "Thought Record",
+                "instruction": "Identify the situation, emotion, negative thought, evidence for/against, and a balanced thought."
+            },
+            {
+                "name": "Behavioral Activation",
+                "instruction": "Plan and do a small enjoyable activity even if you don't feel like it."
+            }
+        ],
+        "crisis_protocols": {
+            "suicide_risk": "Immediate escalation. Provide lifelines. Do not leave user (simulated).",
+            "self_harm": "Harm reduction advice. Suggest holding ice cubes or snapping a rubber band instead.",
+            "severe_anxiety": "Direct guidance to breathing/grounding. distinct short commands."
+        }
+    },
+    "crisis_resources": [
+        {
+            "name": "Emergency",
+            "contact": "911"
+        },
+        {
+            "name": "Suicide & Crisis Lifeline",
+            "contact": "988"
+        },
+        {
+            "name": "Crisis Text Line",
+            "contact": "Text HOME to 741741"
+        },
+        {
+            "name": "Domestic Violence",
+            "contact": "1-800-799-SAFE"
+        }
+    ],
+    "metadata": {
+        "categories": [
+            "conditions",
+            "wellness_modules",
+            "coping_strategies_extended",
+            "crisis_resources"
+        ],
+        "description": "Comprehensive mental health knowledge base including clinical, behavioral, and lifestyle data."
+    },
+    "symptom_library": {
+        "mood_disorders": [
+            {
+                "name": "Sadness",
+                "description": "Persistent feeling of sorrow or unhappiness.",
+                "severity_indicators": "Lasting >2 weeks, affecting daily life.",
+                "coping": [
+                    "Reach out to a friend",
+                    "Journal your feelings",
+                    "Engage in a small pleasurable activity"
+                ]
+            },
+            {
+                "name": "Hopelessness",
+                "description": "Feeling that nothing will get better.",
+                "severity_indicators": "Suicidal ideation, complete withdrawal.",
+                "coping": [
+                    "Focus on one small task",
+                    "Challenge negative thoughts",
+                    "Seek professional help"
+                ]
+            },
+            {
+                "name": "Irritability",
+                "description": "Easily annoyed or angered.",
+                "severity_indicators": "Frequent outbursts, damaging relationships.",
+                "coping": [
+                    "Deep breathing",
+                    "Step away from the situation",
+                    "Physical exercise"
+                ]
+            },
+            {
+                "name": "Loss of Interest",
+                "description": "No longer enjoying hobbies or activities.",
+                "severity_indicators": "Complete isolation, anhedonia.",
+                "coping": [
+                    "Force small engagements",
+                    "Reconnect with old hobbies",
+                    "Identify barriers"
+                ]
+            }
+        ],
+        "anxiety_disorders": [
+            {
+                "name": "Worry",
+                "description": "Excessive concern about future events.",
+                "severity_indicators": "Unable to control worry, physical symptoms.",
+                "coping": [
+                    "Scale the worry (1-10)",
+                    "Worry time technique",
+                    "Mindfulness"
+                ]
+            },
+            {
+                "name": "Panic Attacks",
+                "description": "Sudden intense fear with physical reactions.",
+                "severity_indicators": "Frequent attacks, fear of future attacks.",
+                "coping": [
+                    "5-4-3-2-1 Grounding",
+                    "Box breathing",
+                    "Cold water on face"
+                ]
+            },
+            {
+                "name": "Restlessness",
+                "description": "Feeling on edge or unable to relax.",
+                "severity_indicators": "Insomnia, inability to sit still.",
+                "coping": [
+                    "Progressive muscle relaxation",
+                    "Brisk walking",
+                    "Limit caffeine"
+                ]
+            }
+        ],
+        "stress_trauma": [
+            {
+                "name": "Flashbacks",
+                "description": "Reliving a traumatic event.",
+                "severity_indicators": "Disassociation, loss of touch with reality.",
+                "coping": [
+                    "Grounding techniques",
+                    "Safety anchors",
+                    "Therapy (EMDR/CBT)"
+                ]
+            },
+            {
+                "name": "Hypervigilance",
+                "description": "Being constantly on guard.",
+                "severity_indicators": "Exhaustion, perceiving threats everywhere.",
+                "coping": [
+                    "Relaxation training",
+                    "Safe space visualization",
+                    "Limit news/stimuli"
+                ]
+            }
+        ],
+        "ocd": [
+            {
+                "name": "Intrusive Thoughts",
+                "description": "Unwanted, disturbing thoughts.",
+                "severity_indicators": "Causing extreme distress or compulsions.",
+                "coping": [
+                    "Acknowledge but don't engage",
+                    "Label the thought as 'OCD'",
+                    "Delay response"
+                ]
+            },
+            {
+                "name": "Compulsions",
+                "description": "Repetitive behaviors to reduce anxiety.",
+                "severity_indicators": "Consuming >1 hour/day, interfering with life.",
+                "coping": [
+                    "Exposure and Response Prevention (ERP) concepts",
+                    "Resist the urge for 1 minute"
+                ]
+            }
+        ],
+        "psychosis": [
+            {
+                "name": "Hallucinations",
+                "description": "Sensing things that aren't there.",
+                "severity_indicators": "Command hallucinations, confusion.",
+                "coping": [
+                    "Reality testing (ask others)",
+                    "Reduce stimulation",
+                    "Contact doctor immediately"
+                ]
+            },
+            {
+                "name": "Delusions",
+                "description": "False beliefs held despite evidence.",
+                "severity_indicators": "Paranoia, belief of harm.",
+                "coping": [
+                    "Focus on feelings not facts",
+                    "Reduce stress",
+                    "Medical intervention"
+                ]
+            }
+        ],
+        "behavioral": [
+            {
+                "name": "Substance Misuse",
+                "description": "Using drugs/alcohol to cope.",
+                "severity_indicators": "Impact on work/relationships, withdrawal.",
+                "coping": [
+                    "Identify triggers",
+                    "Urge surfing",
+                    "Support groups (AA/NA)"
+                ]
+            },
+            {
+                "name": "Social Withdrawal",
+                "description": "Avoiding social interaction.",
+                "severity_indicators": "Complete isolation for prolonged periods.",
+                "coping": [
+                    "Small social steps",
+                    "Online communities",
+                    "Texting a friend"
+                ]
+            }
+        ],
+        "cognitive": [
+            {
+                "name": "Brain Fog",
+                "description": "Confusion or lack of mental clarity.",
+                "severity_indicators": "Inability to work or drive safely.",
+                "coping": [
+                    "Single-tasking",
+                    "Ensure sleep/hydration",
+                    "Break tasks down"
+                ]
+            },
+            {
+                "name": "Poor Concentration",
+                "description": "Difficulty focusing.",
+                "severity_indicators": "Unable to complete simple tasks.",
+                "coping": [
+                    "Pomodoro technique",
+                    "Minimize distractions",
+                    "Mindfulness training"
+                ]
+            }
+        ],
+        "physical": [
+            {
+                "name": "Muscle Tension",
+                "description": "Body stiffness due to stress.",
+                "severity_indicators": "Chronic pain, headaches.",
+                "coping": [
+                    "Stretching/Yoga",
+                    "Warm bath",
+                    "Massage"
+                ]
+            },
+            {
+                "name": "Sleep Issues",
+                "description": "Insomnia or oversleeping.",
+                "severity_indicators": "Chronic fatigue, impact on daily function.",
+                "coping": [
+                    "Sleep hygiene",
+                    "Relaxation before bed",
+                    "Consistent schedule"
+                ]
+            }
+        ]
+    },
+    "knowledge_base": {
+        "faqs": [
+            {
+                "question": "What is depression?",
+                "answer": "Depression is a mood disorder causing a persistent feeling of sadness and loss of interest."
+            },
+            {
+                "question": "What is anxiety?",
+                "answer": "Anxiety is your body's natural response to stress, but it becomes a disorder when it's excessive and uncontrollable."
+            },
+            {
+                "question": "How do I find a therapist?",
+                "answer": "You can check insurance directories, Psychology Today, or local health clinics."
+            }
+        ],
+        "lifestyle_tips": [
+            {
+                "category": "Sleep Hygiene",
+                "tips": [
+                    "Keep room cool",
+                    "No screens 1hr before bed",
+                    "Same wake-up time"
+                ]
+            },
+            {
+                "category": "Nutrition",
+                "tips": [
+                    "Eat regular meals",
+                    "Limit caffeine/alcohol",
+                    "Hydrate"
+                ]
+            },
+            {
+                "category": "Social",
+                "tips": [
+                    "Schedule 1 social contact a week",
+                    "Join a club",
+                    "Volunteer"
+                ]
+            }
+        ]
+    },
+    "user_context_schema": {
+        "demographics": [
+            "age",
+            "gender",
+            "culture"
+        ],
+        "history": [
+            "past_conversations",
+            "recurring_themes"
+        ],
+        "metrics": [
+            "session_count",
+            "avg_sentiment"
+        ]
+    }
+}

@@ -1,0 +1,8 @@
+flask
+sqlalchemy
+scikit-learn
+nltk
+textblob
+pymysql
+flask-login
+flask-sqlalchemy
